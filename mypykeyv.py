@@ -17,7 +17,7 @@ secretValue = input()
 print("Create a secret in " + keyVaultName + "called '" + secretName + "' with the value '" + secretValue + "'")
 client.set_secret(secretName, secretValue)
 
-print("done.")
+print("Adding new secret and value done.")
 
 print("Forgetting your secret")
 secretValue = ""
@@ -34,7 +34,7 @@ print("Deleting your secret from '" + keyVaultName + "'")
 ##client.delete_secret(secretName)
 client.begin_delete_secret(secretName)
 
-print("aaila, done.")
+print("Deleting secret done.")
 
 
 
